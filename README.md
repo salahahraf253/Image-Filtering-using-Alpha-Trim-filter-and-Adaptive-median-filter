@@ -14,10 +14,10 @@
 4.	Calculate the average of the remaining values as the new pixel value and place it in the center of the window in the new image, see figure 1.
 This filter is usually used to remove both salt & pepper noise and random noise. See figure 2</p>
 <h3><em>Note</em></h3>
+<ul>
 <li>
-<ol>
- We work on gray-level images. So, each pixel has a value ranged from 0 to 255. Where 0 is the black pixel and 255 is the white pixel.
- </ol> 
- </li>
+We work on gray-level images. So, each pixel has a value ranged from 0 to 255. Where 0 is the black pixel and 255 is the white pixel.
+</li> 
+</ul>
 
 <img src="https://github.com/salahahraf253/Image-Filtering-using-Alpha-Trim-filter-and-Adaptive-median-filter/blob/main/Samples/picture%20documnet/figure%202.jpg">
