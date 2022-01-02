@@ -46,7 +46,7 @@ However, the standard median filter has the following drawbacks:
  <h2>Sample run using adaptive median filter with window 9</h2>
  <img src="https://github.com/salahahraf253/Image-Filtering-using-Alpha-Trim-filter-and-Adaptive-median-filter/blob/main/Samples/Examples%20for%20Output%20Images/adaptive_median_filter_windowSize%209.png">
  <b>
- <h2>Sorting Algorithms>
+  <h2>Sorting Algorithms</h2>
   <ul>
    <li>Quick Sort</li>
    <li>Counting Sort</li>
