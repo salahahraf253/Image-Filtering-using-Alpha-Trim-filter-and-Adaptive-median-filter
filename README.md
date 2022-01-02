@@ -40,3 +40,5 @@ However, the standard median filter has the following drawbacks:
  </ol>
  </p>
  
+<h2>Sample run using alpha-trim filter with window size 5 & trim value 5</h2>
+<img src="https://github.com/salahahraf253/Image-Filtering-using-Alpha-Trim-filter-and-Adaptive-median-filter/blob/main/Samples/Examples%20for%20Output%20Images/alphatrim%20windowSize%205%20%26%20trim%20value%205.png">
