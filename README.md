@@ -6,3 +6,6 @@
 **1.	Alpha-trim filter**
 ---
 **2.	Adaptive median filter**
+---
+
+## **First: ** --Alpha-trim filter--
