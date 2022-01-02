@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Windows.Forms;
 using System;
 using System.Security.Policy;
@@ -8,7 +8,6 @@ namespace ImageFilters
 {
     public class Alpha_Trim_Filter
     {
-        
         public static byte appplyFilterofAlphaTrim(byte[,] ImageMatrix, int x, int y, int windowSize, int sortType, int trimValue)     //O(n^2)
         {
             byte[] windowPixels = ImageOperations.constructWindowOfPixels(ImageMatrix, x, y, windowSize);   //O(n)
@@ -16,25 +15,23 @@ namespace ImageFilters
             int  sumOfPixels=0;
             byte avgargeOfPixels=0;
 
-            if(windowPixelSize > (trimValue * 2))//check the window size >= trim value * 2
+            if(windowPixelSize > (trimValue * 2))       //check the window size >= trim value * 2
             {
                 byte[] sortedPixels = new byte[windowPixelSize];
+                if (sortType == 1)      //Quick sort
+                {
+                    windowPixels=sorting.Quick_Sort(windowPixels,0,windowPixels.Length-1);
+                    sumOfPixels = sorting.calcSumOfPixels(windowPixels, trimValue, windowPixels.Length-trimValue);
+                }
                 if (sortType == 2) //counting sort
                 {
                     windowPixels = sorting.Counting_Sort(windowPixels, windowPixelSize);        //O(n)    
-                    for (int i = 0; i < windowPixelSize; i++)   //O(n)
-                    {
-                        sortedPixels[i] = windowPixels[i];
-                    }
-                    for (int i = trimValue; i < windowPixelSize - trimValue; i++)               //O(n)
-                    {
-                        sumOfPixels += sortedPixels[i];
-                    }
-                    
+                    sumOfPixels = sorting.calcSumOfPixels(windowPixels, trimValue, windowPixels.Length - trimValue);
+
                 }
                 else if (sortType == 3) //Select the Kth element
                 {
-                    sumOfPixels=sorting.excludeTrimPixels(windowPixels, trimValue);         //O(n^2) 
+                    sumOfPixels=sorting.excludeTrimPixelsUsingRandomizedSelection(windowPixels, trimValue);         //O(n^2) 
                 }
                 else if (sortType == 4) // using Max & Min Heap
                 {
