@@ -3,7 +3,7 @@
 ## Order Statistics Filters
 **In image processing, filter is usually necessary to perform a high degree of noise reduction in an image before performing higher-level processing steps. The order statistics** **filter is a non-linear digital filter technique, often used to remove speckle  (salt and pepper) noise from images. We target two common filters in this project:**
 <p>The main idea of both filters is to sort the pixel values in a neighborhood region with certain window size and then chose/calculate the single value from them and places it in the center of the window in a new image, see figure 1. This process is repeated for all pixels in the original image.</p>
-<img src="https://drive.google.com/file/d/1OL3C6DDlQfKZm0Njvl-DabkyS8Lk9SY5/view?usp=sharing">
+<img src="https://github.com/salahahraf253/Image-Filtering-using-Alpha-Trim-filter-and-Adaptive-median-filter/blob/main/Samples/picture%20documnet/figure%201.jpg">
 <h2>1.	Alpha-trim filter</h2>
  <h2>2.	Adaptive median filter</h2>
 <h2><b>First:</b> <mark>Alpha-trim filter</mark></h2>
