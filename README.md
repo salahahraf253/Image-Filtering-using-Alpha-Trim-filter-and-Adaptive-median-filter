@@ -35,8 +35,8 @@ However, the standard median filter has the following drawbacks:
   </ol>
  <b>Adaptive median filter</b> is designed to handle these drawbacks by:
  <ol>
-  <li>1.	Seeking a median value that’s not either salt or pepper noise by increasing the window size until reaching such median.</li>
-  <li>2.	Replace the noise pixels only. (i.e. if the pixel is not a salt or a pepper, then leave it).</li>
+  <li>Seeking a median value that’s not either salt or pepper noise by increasing the window size until reaching such median.</li>
+  <li>Replace the noise pixels only. (i.e. if the pixel is not a salt or a pepper, then leave it).</li>
  </ol>
  </p>
  
