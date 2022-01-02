@@ -30,8 +30,13 @@ We work on gray-level images. So, each pixel has a value ranged from 0 to 255. W
 It's usually used to remove the salt and pepper noise, see figure 3.
 However, the standard median filter has the following drawbacks:
   <ol>
-   <li>It fails to remove salt and pepper noise with large percentage (greater than 20%) without causing distortion in the original image</li>
+   <li>It fails to remove salt and pepper noise with large percentage (greater than 20%) without causing distortion in the original image.</li>
    <li>It usually has a side-effect on the original image especially when it’s applied with large mask size, see figure 2 with window 7×7.</li>
   </ol>
-    
+ <b>Adaptive median filter</b> is designed to handle these drawbacks by:
+ <ol>
+  <li>1.	Seeking a median value that’s not either salt or pepper noise by increasing the window size until reaching such median.</li>
+  <li>2.	Replace the noise pixels only. (i.e. if the pixel is not a salt or a pepper, then leave it).</li>
+ </ol>
  </p>
+ 
