@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Drawing;
@@ -13,9 +13,10 @@ namespace ImageFilters
         public static byte applyFilterOfMedain(byte[,] ImageMatrix, int x, int y, int maxWindowSize, int sortType)
         {
             byte newPixel=0;
+
             for (int windowSize = 3; windowSize <= maxWindowSize; windowSize += 2)      //O(n/2)
             {
-                byte[] windowOfPixels = ImageOperations.constructWindowOfPixels(ImageMatrix, x, y, windowSize);
+                byte[] windowOfPixels = ImageOperations.constructWindowOfPixels(ImageMatrix, x, y, windowSize );
                 int windowPixelSize =windowOfPixels.Length;
                 byte[] sortedPixels = new byte[windowPixelSize ];
                 if (sortType == 1)
@@ -24,7 +25,7 @@ namespace ImageFilters
                 }
                 else if (sortType == 2)
                 {
-                    windowOfPixels = sorting.Counting_Sort(windowOfPixels, windowPixelSize ); //sort the window using counting sort             O(n)
+                    windowOfPixels = sorting.Counting_Sort(windowOfPixels, windowPixelSize ); //sort the window using counting sort             O(n+k)
                 }
 
                 for (int i = 0; i < windowPixelSize ; i++)
@@ -34,13 +35,13 @@ namespace ImageFilters
                 byte Zmin = sortedPixels[0]; 
                 byte Zmax = sortedPixels[windowPixelSize  - 1];
                 byte Zmid = sortedPixels[windowPixelSize  / 2];
-                //if (ArrayLength % 2 == 1)
+                //if (windowPixelSize % 2 == 1)
                 //{
-                //   Zmid = sortedPixels[ArrayLength / 2];
+                //   Zmid = sortedPixels[windowPixelSize / 2];
                 //}
                 //else
                 //{
-                //   Zmid = Convert.ToByte((sortedPixels[ArrayLength / 2] + sortedPixels[ArrayLength / 2 - 1]) / 2);
+                //   Zmid = Convert.ToByte((sortedPixels[windowPixelSize / 2] + sortedPixels[windowPixelSize / 2 - 1]) / 2);
                 //}
 
                 byte A1 = (byte)(Zmid - Zmin);
@@ -70,7 +71,6 @@ namespace ImageFilters
                     }
                 }
             }
-
             return newPixel;
         } 
 
