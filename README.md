@@ -8,4 +8,4 @@
 **2.	Adaptive median filter**
 ---
 
-## **First: ** --Alpha-trim filter--
+## **First:** ==Alpha-trim filter==
