@@ -6,7 +6,7 @@
 <img src="https://github.com/salahahraf253/Image-Filtering-using-Alpha-Trim-filter-and-Adaptive-median-filter/blob/main/Samples/picture%20documnet/figure%201.jpg">
 <h2>1.	Alpha-trim filter</h2>
  <h2>2.	Adaptive median filter</h2>
-<h2><b>First:</b> <mark>Alpha-trim filter</mark></h2>
+<h2><b>First:</b> <mark>Alpha-trim Filter</mark></h2>
 <p>The idea is to calculate the average of some neighboring pixels' values after trimming out (excluding) the smallest T pixels and largest T pixels. This can be done by repeating the following steps for each pixel in the image:
 1.	Store the values of the neighboring pixels in an array. The array is called the window, and it should be odd sized.
 2.	Sort the values in the window in ascending order.
@@ -21,3 +21,17 @@ We work on gray-level images. So, each pixel has a value ranged from 0 to 255. W
 </ul>
 
 <img src="https://github.com/salahahraf253/Image-Filtering-using-Alpha-Trim-filter-and-Adaptive-median-filter/blob/main/Samples/picture%20documnet/figure%202.jpg">
+<b>
+<img src="https://github.com/salahahraf253/Image-Filtering-using-Alpha-Trim-filter-and-Adaptive-median-filter/blob/main/Samples/picture%20documnet/figure%203.jpg">
+
+ <h2><b>Second:</b> <mark>Adaptive Median Filter</mark></h2>
+ <p>
+  The idea of the standard median filter is similar to alpha-trim filter but instead we calculate the median of neighboring pixels' values (middle value in the window array after sorting). 
+It's usually used to remove the salt and pepper noise, see figure 3.
+However, the standard median filter has the following drawbacks:
+  <li>
+   <ol>It fails to remove salt and pepper noise with large percentage (greater than 20%) without causing distortion in the original image</ol>
+   <ol>It usually has a side-effect on the original image especially when it’s applied with large mask size, see figure 2 with window 7×7.</ol>
+  </li>
+    
+ </p>
