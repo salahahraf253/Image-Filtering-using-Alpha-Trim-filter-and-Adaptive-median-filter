@@ -1,4 +1,9 @@
 # Image Filter using Alpha trim & Adaptive median filter
+## Project Demo
+<video  controls>
+  <source src="https://github.com/salahashraf253/Image-Filtering-using-Alpha-Trim-filter-and-Adaptive-median-filter/blob/main/Samples/Image%20Filters%20Demo.mp4" type="video/mp4">
+ 
+</video>
 
 ## Order Statistics Filters
 **In image processing, filter is usually necessary to perform a high degree of noise reduction in an image before performing higher-level processing steps. The order statistics** **filter is a non-linear digital filter technique, often used to remove speckle  (salt and pepper) noise from images. We target two common filters in this project:**
