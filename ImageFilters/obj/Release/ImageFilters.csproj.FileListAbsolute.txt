@@ -1,0 +1,14 @@
+E:\Image_Filter\ImageFilters\bin\Release\ImageFilters.exe.config
+E:\Image_Filter\ImageFilters\bin\Release\ImageFilters.exe
+E:\Image_Filter\ImageFilters\bin\Release\ImageFilters.pdb
+E:\Image_Filter\ImageFilters\bin\Release\ZedGraph.dll
+E:\Image_Filter\ImageFilters\bin\Release\ZGraphTools.dll
+E:\Image_Filter\ImageFilters\bin\Release\ZGraphTools.pdb
+E:\Image_Filter\ImageFilters\obj\Release\ImageFilters.csproj.AssemblyReference.cache
+E:\Image_Filter\ImageFilters\obj\Release\ImageFilters.Properties.Resources.resources
+E:\Image_Filter\ImageFilters\obj\Release\ImageFilters.csproj.GenerateResource.cache
+E:\Image_Filter\ImageFilters\obj\Release\ImageFilters.csproj.CoreCompileInputs.cache
+E:\Image_Filter\ImageFilters\obj\Release\ImageFilters.csproj.CopyComplete
+E:\Image_Filter\ImageFilters\obj\Release\ImageFilters.exe
+E:\Image_Filter\ImageFilters\obj\Release\ImageFilters.pdb
+E:\Image_Filter\ImageFilters\obj\Release\ImageFilters.mainForm.resources
